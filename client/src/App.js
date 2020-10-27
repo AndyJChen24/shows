@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import './App.css';
 import Home from "./Home";
-import Profile from "./Profile";
+//import Profile from "./Profile";
 import Loading from "./Loading";
 
 function App() {
@@ -18,10 +18,10 @@ function App() {
   if (auth === null) {
     return <Loading/>
   }
-  if (auth) {
-    return <Profile auth={auth}/>
-  }
-  return <Home/>
+  // if (auth) {
+  //   return <Profile auth={auth}/>
+  // }
+  return <Home auth={auth}/>
 }
 
 export default App;

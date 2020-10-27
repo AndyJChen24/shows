@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Nav() {
+function Nav( {auth} ) {
 
     return(
         <nav
@@ -19,6 +19,15 @@ function Nav() {
             >
                 <button>Register</button>
             </a>
+            <p>
+                    You are logged in as {auth && auth.nickname ? auth.nickname : null}
+                </p>
+                <a
+                    className="App-link"
+                    href={"/auth/logout"}
+                >
+                    Logout
+                </a>
         </nav>
     )
 }

@@ -3,20 +3,15 @@ import React from 'react';
 import './App.css';
 import Nav from './components/Nav';
 
-function Home() {
+function Home( {auth} ) {
     return (
         <div className="App">
-            <Nav/>
+            <Nav auth = {auth} />
             <header className="App-header">
                 <p>
-                    You are not logged in
+                    Seach Bar
                 </p>
-                <a
-                    className="App-link"
-                    href={"/auth/login"}
-                >
-                    Login Here
-                </a>
+                
             </header>
         </div>
     );
