@@ -32,6 +32,7 @@
   },
   "homepage": "https://github.com/AndyJChen24/shows#readme",
   "dependencies": {
+    "axios": "^0.21.0",
     "cookie-session": "^1.4.0",
     "csurf": "^1.11.0",
     "dotenv": "^8.2.0",

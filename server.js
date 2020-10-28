@@ -7,6 +7,8 @@ const path = require('path');
 const rateLimit= require('express-rate-limit')
 const session = require('cookie-session');
 
+const routes = require('./routes');
+
 /* dotenv config */
 const dotenv = require('dotenv');
 dotenv.config({path: path.resolve(__dirname, '.env')});
@@ -38,8 +40,7 @@ app.use(limiter);
 const passport = require('./middlewares/passport');
 app.use(passport.initialize());
 
-const authRoutes = require('./routes/auth');
-app.use('/auth', authRoutes);
+app.use(routes);
 
 app.listen(8080, () => {
     console.log("Express server running on port 8080");

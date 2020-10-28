@@ -12,3 +12,5 @@ router.route('/title/:searchName')
             res.status(err.response.status).send(err.response.statusText);
         });
     });
+
+module.exports = router;
