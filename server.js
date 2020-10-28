@@ -38,8 +38,8 @@ app.use(limiter);
 const passport = require('./middlewares/passport');
 app.use(passport.initialize());
 
-const authRoutes = require('./routes/auth');
-app.use('/auth', authRoutes);
+const routes = require('./routes');
+app.use(routes);
 
 app.listen(8080, () => {
     console.log("Express server running on port 8080");
