@@ -2,17 +2,15 @@
 import React from 'react';
 import './App.css';
 import Nav from './components/Nav';
-
+import Search from './components/Search'
 function Home( {auth} ) {
     return (
         <div className="App">
             <Nav auth = {auth} />
-            <header className="App-header">
-                <p>
-                    Seach Bar
-                </p>
-                
+            <header className="App-header">  
+                <Search/>
             </header>
+            
         </div>
     );
 }
