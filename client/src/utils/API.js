@@ -3,7 +3,6 @@ import axios from 'axios';
 
 export default {
     getTitle(searchName) {
-        //console.log('test')
         return axios.get(`/api/imdb/title/${searchName}`);
     },
     getTrending() {

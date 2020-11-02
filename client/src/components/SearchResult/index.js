@@ -1,10 +1,9 @@
 import React from 'react';
 
-function SearchResult() {
+function SearchResult( { searchResult } ) {
     return(
         <div>
-            <h1>Movie Name</h1>
-            <h3>Detail</h3>
+            <p>{searchResult.title}</p>
         </div>
     )
 }
