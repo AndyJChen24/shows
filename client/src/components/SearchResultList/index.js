@@ -1,4 +1,4 @@
-import react from 'react';
+import React from 'react';
 import SearchResult from '../SearchResult'
 function SearchResultList( { searchResultList } ){
     return (
