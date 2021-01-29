@@ -2,16 +2,12 @@
 import React from 'react';
 import './App.css';
 
-function Loading() {
+function Detail( { searchResult }) {
     return (
         <div className="App">
-            <header className="App-header">
-                <p>
-                    Loading...
-                </p>
-            </header>
+
         </div>
     );
 }
 
-export default Loading;
+export default Detail;

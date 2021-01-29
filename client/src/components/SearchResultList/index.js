@@ -1,6 +1,8 @@
 import React from 'react';
 import SearchResult from '../SearchResult'
+
 function SearchResultList( { searchResultList } ){
+    console.log({searchResultList})
     return (
         <div>
             <ul>
